@@ -45,6 +45,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+                    
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
@@ -53,9 +56,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('admin.projects.index') }}">Progetti</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="{{ route('admin.projects.create') }}">Nuovo Progetto</a>
-                        </li>
+                        <div class="nav-item">
+                            <a class="nav-link" href="{{ route('admin.projects.create') }}" class="nav-link">Nuovo Progetto</a>
+                        </div>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -74,7 +77,7 @@
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
                                     data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
-                                    {{ Auth::user()->name }} <em>({{ Auth::user()->role->name}})</em>
+                                    {{ Auth::user()->name }} <em>({{ Auth::user()->role->name }})</em>
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">

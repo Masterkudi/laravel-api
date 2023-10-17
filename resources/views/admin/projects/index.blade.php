@@ -5,11 +5,13 @@
 
         <h3 class="m-3">Lista dei miei Progetti</h3>
 
-        @if(Auth::user()->role->name === 'admin')
-        <div class="bg-light my-2">
-            <a href="{{ route('admin.projects.create') }}" class="btn btn-link">Nuovo post</a>
-        </div>
-        @endif
+        {{--
+            @if (Auth::user()->role->name === 'admin')
+            <div class="bg-light my-2">
+                <a href="{{ route('admin.projects.create') }}" class="btn btn-link">Nuovo Progetto></a>
+            </div>
+            @endif
+        --}}
 
         <div class="projectsGallery">
             <div class="row g-4 justify-content-center flex-wrap-wrap">
@@ -17,8 +19,7 @@
                     <div class="col-2">
                         <div class="card p-1">
                             <div>
-                                <img src={{ asset('/storage/' . $project->image) }} class="img-thumbnail"
-                                    style="width: 100%">
+                                <img src={{ asset('/storage/' . $project->image) }} class="img-thumbnail" style="width: 100%">
                             </div>
                             <div class="card-body bg-white text-center">
                                 <div>{{ $project->title }}</div>

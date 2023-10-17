@@ -24,7 +24,7 @@ class User extends Authenticatable
     ];
 
     /**
-     * The attributes that should be hidden for serialization.
+     * Quando si recupera i dati degli utenti tramite API la password verrà nascosta
      *
      * @var array<int, string>
      */
