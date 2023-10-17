@@ -14,7 +14,7 @@ class ProjectController extends Controller
         // $projects = Project::all();
 
         // recupera i dati dal DB e li pagina interfacciandosi con il model Project
-        $projects = Project::with('user', 'type', 'technologies')->paginate(4);
+        $projects = Project::with('user', 'type', 'technologies')->paginate(10);
         // Restituisco i dati in formato JSON
         return response()->json($projects);
     }

@@ -52,5 +52,9 @@
                 @endforeach
             </div>
         </div>
+
+        <div class="d-flex justify-content-center">
+            {{ $projects->links() }}Pagination non funzionante
+        </div>
     </div>
 @endsection
