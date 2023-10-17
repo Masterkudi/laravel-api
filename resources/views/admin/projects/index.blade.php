@@ -6,9 +6,9 @@
         <h3 class="m-3">Lista dei miei Progetti</h3>
 
         <div class="projectsGallery">
-            <div class="row cols-3 g-4 justify-content-center flex-wrap-wrap">
+            <div class="row g-4 justify-content-center flex-wrap-wrap">
                 @foreach ($projects as $project)
-                    <div class="col-3">
+                    <div class="col-2">
                         <div class="card p-1">
                             <div>
                                 <img src={{ asset('/storage/' . $project->image) }} class="img-thumbnail"
