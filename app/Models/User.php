@@ -52,4 +52,12 @@ class User extends Authenticatable
     public function userDetail() {
         return $this->hasOne(userDetail::class);
     }
+
+    /**
+     * questa funzione è secondaria e collega Role e ritorna belongsTo
+     * per il fatto che c'è un solo role per ogni user
+     */
+     public function role() {
+        return $this->belongsTo(Role::class);
+     }
 }

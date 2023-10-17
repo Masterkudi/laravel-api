@@ -5,6 +5,12 @@
 
         <h3 class="m-3">Lista dei miei Progetti</h3>
 
+        @if(Auth::user()->role->name === 'admin')
+        <div class="bg-light my-2">
+            <a href="{{ route('admin.projects.create') }}" class="btn btn-link">Nuovo post</a>
+        </div>
+        @endif
+
         <div class="projectsGallery">
             <div class="row g-4 justify-content-center flex-wrap-wrap">
                 @foreach ($projects as $project)

@@ -37,6 +37,11 @@ class ProjectController extends Controller
     // CREATE FUNCTION
 
     public function create() {
+        if(Auth::user()->role->name !== 'admin') {
+            return redirect()->route('admin.projects.index');
+            // IN ALTERNATIVA
+            // return abort (403);
+        }
 
         $types = Type::all();
         $technologies = Technology::all();

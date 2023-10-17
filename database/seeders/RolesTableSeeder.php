@@ -31,10 +31,10 @@ class RolesTableSeeder extends Seeder
         ];
 
         foreach ($roles as $role) {
-            $role = new Role();
-            $role->name = $role['name'];
-            $role->description = $role['display_name'];
-            $role->save();
+            $newRole = new Role();
+            $newRole->name = $role['name'];
+            $newRole->description = $role['display_name'];
+            $newRole->save();
         }
     }
 }
