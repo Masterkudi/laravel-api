@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('guests.welcome');
+    return redirect(env("APP_FRONTEND_URL"));
 });
 
 Route::get('/admin', function () {

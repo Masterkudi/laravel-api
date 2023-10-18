@@ -53,8 +53,13 @@
             </div>
         </div>
 
-        <div class="d-flex justify-content-center">
-            {{ $projects->links() }}Pagination non funzionante
+        <div>
+            <a
+            v-for="pageLink in pagination.links"
+            class="btn btn-link"
+            @click="fetchData(pageLink.url)"
+            v-html="pageLink.label"
+            ></a>
         </div>
     </div>
 @endsection

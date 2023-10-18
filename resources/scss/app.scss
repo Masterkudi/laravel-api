@@ -3,11 +3,15 @@
 
 
 body {
-    background: linear-gradient(to bottom, #7c0000, #ffdd00);
-    height: 100vh; /* Imposta l'altezza al 100% del viewport height */
-    margin: 0; /* Rimuovi il margine predefinito del body */
-    font-family: Arial, sans-serif; /* Opzionale: Imposta il font del testo */
-    color: #fff; /* Opzionale: Imposta il colore del testo su bianco */
+  background: linear-gradient(to bottom, #00BB81, #2F4E61);
+  height: 100vh; /* Imposta l'altezza al 100% del viewport height */
+  margin: 0; /* Rimuovi il margine predefinito del body */
+  font-family: Arial, sans-serif; /* Opzionale: Imposta il font del testo */
+  color: #fff; /* Opzionale: Imposta il colore del testo su bianco */
 
-  }
- 
+}
+
+.navbar {
+  background-color: #aed6d8;
+  color: #fff;
+}
